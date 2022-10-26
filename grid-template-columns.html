@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>4 columns</title>
+    <style>
+      .container-grid-one {
+        display: grid;
+      /* we have a grid of 4 columns */
+        /* EQUAL FOUR COLUMN GRID */
+        /* grid-template-columns: 25% 25% 25% 25%; */
+      }
+
+      .container-grid-one > div {
+        background-color: blueviolet;
+        color: white;
+      }
+
+      .container-grid-two {
+        display: grid;
+        /* now 2 different widths  */
+        /* TWO COLUMN GRID DIFFERENT WIDTHS */
+        /* grid-template-columns: 75% 25%;  */
+      }
+      
+      /* let's color the cells */
+      /* .container-grid-two>div:nth-child(even) {
+        background: tomato;
+      }
+
+      .container-grid-two>div:nth-child(odd) {
+        background: cornflowerblue; 
+      } */
+
+      .container-grid-three {
+        display: grid;
+        /* different measurements*/
+        grid-template-columns: 150px 75%; 
+      }
+
+      /* let's color the cells */
+      /* .container-grid-three>div:nth-child(even) {
+        background-color: goldenrod;
+      }
+
+      .container-grid-three>div:nth-child(odd) {
+        background: teal; 
+      } */
+    </style>
+  </head>
+  <body>
+    <h1>CSS Grid</h1>
+    <h2>grid-template-columns</h2>
+    <h3>Equal Four Columns</h3>
+    <div class="container-grid-one">
+      <div>one</div>
+      <div>two</div>
+      <div>three</div>
+      <div>four</div>
+      <div>five</div>
+      <div>six</div>
+      <div>seven</div>
+      <div>eight</div>
+      <div>nine</div>
+      <div>ten</div>
+    </div>
+    <h3>Unequal Two Columns</h3>
+    <div class="container-grid-two">
+      <div>one</div>
+      <div>two</div>
+      <div>three</div>
+      <div>four</div>
+      <div>five</div>
+      <div>six</div>
+      <div>seven</div>
+      <div>eight</div>
+      <div>nine</div>
+      <div>ten</div>
+    </div>
+
+    <h3>Different measurements</h3>
+    <p><strong>note</strong>: Columns can be specified with pixels, fractions, units, or percentages.</p>
+    <div class="container-grid-three">
+      <div>one</div>
+      <div>two</div>
+      <div>three</div>
+      <div>four</div>
+      <div>five</div>
+      <div>six</div>
+      <div>seven</div>
+      <div>eight</div>
+      <div>nine</div>
+      <div>ten</div>
+    </div>
+  </body>
+
+</html>
