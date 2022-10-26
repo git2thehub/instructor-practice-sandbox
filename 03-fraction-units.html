@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fraction Units</title>
+    <style>
+      .container-grid-one {
+        display: grid;
+        height: 500px;
+        grid-template-columns: 1fr 1fr 2fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Grid</h1>
+    <h2>Fraction Units</h2>
+    <ul>
+      <li>Fraction units specify the space taken up by each row</li>
+      <li>
+        Fraction units are calculated with how much space is left in your
+        container and what fraction of the space the element should take up
+      </li>
+    </ul>
+    <div class="container-grid-one">
+      <div>Fraction units are specified using arbitrary numbers:</div>
+      <div>1fr, for example, is the normal unit of measurement.</div>
+      <div>2fr will take up double the space of 1fr, and so on and so forth.</div>
+      <div>four</div>
+      <div>five</div>
+      <div>six</div>
+      <div>seven</div>
+      <div>eight</div>
+      <div>nine</div>
+      <div>Fraction units will take up a "fraction" of whatever space is remaining in your container after content, margin, paddings, and the widths of your remaining elements</div>
+    </div>
+  <footer>
+    <p><strong>CSS Box Sizing</strong>
+    <a href="https://www.w3schools.com/css/css3_box-sizing.asp" target="_blank">CSS Box Sizing</a>
+    </p>
+  </footer>
+  </body>
+</html>
