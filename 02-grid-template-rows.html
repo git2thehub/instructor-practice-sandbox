@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>grid-template-rows</title>
+    <style>
+      /* two columns and 4 rows */
+      .container-grid-one {
+        /* display: grid;
+        grid-template-rows: 25% 25% 25% 25%;
+        grid-template-columns: 50% 50%; */
+      }
+      /* .flexbox-container {
+        display: flex;
+      }
+      .flexbox-container > p {
+        margin: 10px;
+      } */
+    </style>
+  </head>
+  <body>
+    <h1>CSS Grid</h1>
+    <h2>grid-template-rows</h2>
+    <p>
+      <strong>Note:</strong> The CSS property grid-template-rows is used to
+      specify the number of rows of content that will display in your container.
+    </p>
+    <p>
+      <strong> Note:</strong> <em>grid-template-rows</em> and
+      <em>grid-template-columns</em> are used together to create full grid
+      layouts.
+    </p>
+    <div class="container-grid-one">
+      <div>one</div>
+      <div>two</div>
+      <div>three</div>
+      <div>four</div>
+      <div>five</div>
+      <div>six</div>
+      <div>seven</div>
+      <div>eight</div>
+      <div>nine</div>
+      <div>ten</div>
+    </div>
+    <h2 style="border-top: 3px solid black; margin-top: 50px; padding-top: 20px;">Sizing Grid Areas</h2>
+    <div class="flexbox-container">
+      <p>
+        When specifying the width of your grid areas, there are several ways to
+        do it.
+      </p>
+      <p>
+        You can specify the size of your columns and rows using hard pixel
+        widths (200px, for example), percentages, or fraction units.
+      </p>
+      <p>
+        A difficult concept for students to understand is that you can use
+        pixels along with percentages and fraction units depending on the layout
+        you are trying to achieve.
+      </p>
+    </div>
+  </body>
+</html>
