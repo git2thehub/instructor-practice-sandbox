@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>grid-template-areas</title>
+    <style>
+      .container-with-grid {
+        display: grid;
+        height: 500px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+          'footer footer footer'
+          'leftSidebar leftSidebar rightContent'
+          'navbar navbar header';
+      }
+      .nav {
+        grid-area: navbar;
+        background-color: gray;
+      }
+      .header {
+        grid-area: header;
+        background-color: lightgray;
+      }
+      .aside {
+        grid-area: leftSidebar;
+      }
+      .right-content {
+        grid-area: rightContent;
+        background-color: silver;
+      }
+      .footer {
+        grid-area: footer;
+        background-color: dimgray;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Property: grid-template-areas</h1>
+    <p>
+      All the properties we just talked about are used to create templates,
+      which are specified by grid-template-areas. Templates are used to display
+      how your content lays out on the page.
+    </p>
+    <p>
+      grid-template-areas are easy to set up: all you need to do is create a
+      class that targets any individual grid element.
+    </p>
+    <p>
+      You can then specify a title for the grid area and use the CSS property
+      grid-template-areas to determine where exactly in this layout these items
+      are supposed to fall.
+    </p>
+    <a
+      href="https://www.w3schools.com/cssref/pr_grid-template-areas.asp"
+      target="_blank"
+    >
+      W3Schools grid-template-areas documentation
+    </a>
+    <ul>
+      <li>
+        In the demo, we will specify a grid that is three columns wide and three
+        rows tall.
+      </li>
+      <li>
+        In this example, it is set up so that our title takes up three rows (In
+        this example, it is set up so that our title takes up three rows
+        (because we specified three fr units for our row and columns)
+      </li>
+      <li>
+        We have a sidebar that occupies one fraction and also content that takes
+        up two frs next to it
+      </li>
+      <li>Lastly, we have a footer that spans all three columns left–right</li>
+    </ul>
+
+    <div class="container-with-grid">
+      <div class="nav">Navbar</div>
+      <div class="header">Header</div>
+      <div class="aside">aside</div>
+      <div class="right-content">Right content</div>
+      <div class="footer">footer</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>grid-template-areas</title>
+    <style>
+      .container-with-grid {
+        display: grid;
+        height: 500px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+          'navbar navbar navbar'
+          'header-bar header-bar header-bar'
+          'left-aside left-aside right-content'
+          'footer-bar footer-bar footer-bar'
+      }
+      nav {
+        grid-area: navbar;
+        background-color: gray;
+      }
+      header {
+        grid-area: header-bar;
+        background-color: lightgray;
+      }
+      aside {
+        grid-area: left-aside;
+      }
+      .content {
+        grid-area: right-content;
+        background-color: silver;
+      }
+      footer {
+        grid-area: footer-bar;
+        background-color: dimgray;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Property: grid-template-areas</h1>
+
+    <div class="container-with-grid">
+      <nav>Navbar</nav>
+      <header>Header</header>
+      <aside>aside</aside>
+      <div class="content">Right content</div>
+      <footer>footer</footer>
+    </div>
+  <ul>
+    <li>A real advantage of using grid-template-areas is that you can alter your HTML content without modifying the actual HTML file</li>
+    <li><strong>grid-template-areas</strong> allow developers (and designers) to rearrange content for different devices in any way they see fit</li>
+    <li>
+      Do you want to switch two sections of content? Using CSS Grid, you can move your HTML content around any way you like.
+    </li>
+  </ul>
+  </body>
+</html>
